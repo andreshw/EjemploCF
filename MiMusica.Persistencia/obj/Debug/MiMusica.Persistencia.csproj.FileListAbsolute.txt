@@ -1,0 +1,10 @@
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\bin\Debug\MiMusica.Persistencia.dll.config
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\bin\Debug\MiMusica.Persistencia.dll
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\bin\Debug\MiMusica.Persistencia.pdb
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\bin\Debug\EntityFramework.dll
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\bin\Debug\EntityFramework.SqlServer.dll
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\bin\Debug\EntityFramework.xml
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\bin\Debug\EntityFramework.SqlServer.xml
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\obj\Debug\MiMusica.Persistencia.csprojResolveAssemblyReference.cache
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\obj\Debug\MiMusica.Persistencia.dll
+E:\PruebasConcepto\MiMusica\MiMusica.Persistencia\obj\Debug\MiMusica.Persistencia.pdb
