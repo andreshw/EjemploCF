@@ -23,5 +23,27 @@ namespace MiMusica.Web.Controllers
             repositorio.GuardarUsuario(usuario);
             return Content("Usuario Almacenado");
         }
+
+        public ActionResult LoguearUsuario(string userName, string password)
+        {
+            UsuarioRepositorio repo = new UsuarioRepositorio();
+            Usuario usuarioValidado = repo.ValidarUsuario(userName, password);
+            if (usuarioValidado == null)
+            {
+                ViewBag.MensajeError = "El usuario no existe, intente nuevamente";
+                return View("Login");
+            }
+            else
+            {
+                Session["usuarioLogueado"] = usuarioValidado;
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
 	}
 }

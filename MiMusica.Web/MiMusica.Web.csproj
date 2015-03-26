@@ -122,6 +122,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AlbumController.cs" />
+    <Compile Include="Controllers\ArtistaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
@@ -164,6 +166,12 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Shared\_LayoutSinAutenticar.cshtml" />
     <Content Include="Views\Usuario\CrearUsuario.cshtml" />
+    <Content Include="Views\Artista\Index.cshtml" />
+    <Content Include="Views\Artista\EditarArtista.cshtml" />
+    <Content Include="Views\Artista\CrearArtista.cshtml" />
+    <Content Include="Views\Artista\AgregarAlbumes.cshtml" />
+    <Content Include="Views\Album\CrearAlbum.cshtml" />
+    <Content Include="Views\Usuario\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MiMusica.Persistencia\MiMusica.Persistencia.csproj">

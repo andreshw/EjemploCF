@@ -1,0 +1,22 @@
+﻿@model MiMusica.Persistencia.Usuario
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutSinAutenticar.cshtml";
+}
+
+<h2>Login</h2>
+
+@using(Html.BeginForm(actionName: "LoguearUsuario", controllerName:"Usuario", method: FormMethod.Get))
+{
+    <!--<div>User name</div>
+    <div><input type="text" name="UserName" value=" " /></div>
+    <div>Password</div>
+    <div><input type="password" name="Password" value=" " /></div>-->
+    <div>User name:</div>
+    <div>@Html.TextBoxFor(m => m.UserName)</div>
+    <div>Password:</div>
+    <div>@Html.PasswordFor(m => m.Password)</div>
+    <div><input type="submit" value="Loguear" /></div>
+    <div>@ViewBag.MensajeError</div>
+    <div>No tienes cuenta?</div>@Html.ActionLink("Registrate", "CrearUsuario", "Usuario")
+    }

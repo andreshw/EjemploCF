@@ -1,0 +1,70 @@
+﻿@model MiMusica.Persistencia.Artista
+
+@{
+    ViewBag.Title = "AgregarAlbumes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>AgregarAlbumes</h2>
+
+<div>
+    <h4>Artista</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UrlImagen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UrlImagen)
+        </dd>
+
+    </dl>
+    <h4>Albumes del artista</h4>
+    @Html.ActionLink("Crear Album", "CrearAlbum", "Album", new { idArtista = Model.Id }, null)
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Nombre Album
+                </th>
+                <th>
+                    Fecha Lanzamiento
+                </th>
+                <th>
+                    Opciones
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var album in Model.Albumes)
+            { 
+             <tr>
+                <th>
+                    @Html.DisplayFor(albumItem => album.Nombre)
+                </th>
+                <th>
+                    @Html.DisplayFor(albumItem => album.FechaLanzamiento)
+                </th>
+                <th>
+                    @Html.ActionLink("Editar", "EditarAlbum", new { id = album.Id }) |
+                    @Html.ActionLink("Agregar Canciones", "AgregarCancion", new { id = album.Id }) |
+                    @Html.ActionLink("Eliminar", "EliminarAlbum", new { id = album.Id })
+                </th>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiMusica.Persistencia;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,11 @@ namespace MiMusica.Web.Controllers
     {
         public ActionResult Index()
         {
+            Usuario usuario = Session["usuarioLogueado"] as Usuario;
+            if(usuario != null)
+            { 
+                ViewBag.NombreUsuario = usuario.Nombre;
+            }
             return View();
         }
 

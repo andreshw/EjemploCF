@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Album.cs" />
+    <Compile Include="AlbumRepositorio.cs" />
     <Compile Include="Artista.cs" />
+    <Compile Include="ArtistaRepositorio.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MiMusicaContexto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
